@@ -25,9 +25,6 @@ return Math.floor(Math.random(10, 200) * (max - min + 1)) + min;
 }
 
 
-
-
-
 /**
  * Sets the time delay given a difficulty parameter.
  *
