@@ -25,8 +25,7 @@ return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 
-console.log(randomInteger(0, 10));
-console.log(randomInteger(600, 1200));
+
 
 
 /**
