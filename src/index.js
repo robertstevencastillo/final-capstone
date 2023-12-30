@@ -155,7 +155,8 @@ function showAndHide(hole, delay){
     gameOver();
   }, delay);
   return timeoutID;
-  }; // TODO: change the setTimeout delay to the one provided as a parameter
+  };
+ }; // TODO: change the setTimeout delay to the one provided as a parameter
 
 
 /**
