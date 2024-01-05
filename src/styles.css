@@ -40,7 +40,8 @@ h2 {
 .info{
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content:space-between;
+  -ms-flex-align: center;
 }
 
 .grid {
