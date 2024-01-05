@@ -126,11 +126,9 @@ function gameOver() {
 *
 */
 function showUp() {
-    let delay = setDelay(difficulty);
-  const hole = chooseHole(hole);
+  let delay = setDelay();
+  const hole = chooseHole();
   return showAndHide(hole, delay);
-  
-
 }
 
 /**
