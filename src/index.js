@@ -45,13 +45,13 @@ function setDelay(difficulty) {
 
 
     if (easy) {
-      console.log(randomInteger(0, 1500));
+      return randomInteger(0, 1500);
     }
   else if (normal) { 
-      console.log(randomInteger(0, 1000));
+      return randomInteger(0, 1000);
     }
   else if (hard) {
-      console.log(randomInteger(600, 1200));
+      return randomInteger(600, 1200);
     }
     return difficulty;
 }
