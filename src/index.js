@@ -45,10 +45,10 @@ function setDelay(difficulty) {
 
 
     if (easy) {
-      return randomInteger(1500);
+      return randomInteger(0, 1500);
     }
   else if (normal) { 
-      return randomInteger(1000);
+      return randomInteger(0, 1000);
     }
   else if (hard) {
       return randomInteger(600, 1200);
