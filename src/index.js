@@ -43,7 +43,6 @@ return Math.floor(Math.random() * (max - min + 1)) + min;
 function setDelay(difficulty) {
   // TODO: Write your code here.
 
-
     if (easy) {
       return randomInteger(0, 1500);
     }
@@ -126,7 +125,7 @@ function gameOver() {
 *
 */
 function showUp() {
-  let delay = setDelay(difficulty);
+  let delay = setDelay("easy");
   const hole = chooseHole(holes);
   return showAndHide(hole, delay);
 }
