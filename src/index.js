@@ -125,7 +125,7 @@ function gameOver() {
 *
 */
 function showUp() {
-  let delay = setDelay(easy);
+  let delay = setDelay(hard);
   const hole = chooseHole(holes);
   return showAndHide(hole, delay);
 }
