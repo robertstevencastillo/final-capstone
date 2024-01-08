@@ -76,7 +76,7 @@ function chooseHole(holes) {
     const choose = Math.floor(Math.random() * holes.length);
     const hole = holes[choose];
     if (hole === lastHole) {
-        return randomHole(holes);
+        return chooseHole(holes);
     }
     lastHole = hole;
     return hole;
