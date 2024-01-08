@@ -105,12 +105,21 @@ function chooseHole(holes) {
 */
 function gameOver() {
   // TODO: Write your code here
+  let timeOutID;
+  if(time > 0){
+    timeOutID = showUp();
+     }
+    else {
+      stopGame(timeOutID);
+  
+    }
+ 
   stopGame();
 }
 
-function stopGame() {
+function stopGame(timeOutID) {
   clearScore();
-
+  clearTimeout(timeOutID);
 }
 
 /**
@@ -140,13 +149,11 @@ function showAndHide(hole, delay){
   // TODO: call the toggleVisibility function so that it adds the 'show' class.
       // TODO: call the toggleVisibility function so that it removes the 'show' class when the timer times out.
     
-  toggleVisibility(hole) ;{
   const timeoutID = setTimeout(() => {
     toggleVisibility(hole);
-    gameOver();
+    //gameOver();
   }, delay);
   return timeoutID;
-  };
  }; // TODO: change the setTimeout delay to the one provided as a parameter
 
 
@@ -206,7 +213,6 @@ function updateTimer() {
     time -= 1;
     timerDisplay.textContent = time;
   
-  return time;
 }
 
 /**
@@ -218,11 +224,11 @@ function updateTimer() {
 function startTimer() {
   // TODO: Write your code here
   
-  while(time > 0) {
+  const intervalID = setInterval(() => {
     updateTimer();
-  }
-  gameOver()
-  return timer;
+    gameOver();
+  }, 1000)
+  //gameOver()
 }
 
 
@@ -291,7 +297,7 @@ function startGame(){
   setDuration(10);
   showUp();
   startTimer();
-  setEventListeners();
+  //setEventListeners();
   return "game started"; 
 }
 
