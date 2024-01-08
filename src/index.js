@@ -43,16 +43,15 @@ return Math.floor(Math.random() * (max - min + 1)) + min;
 function setDelay(difficulty) {
   // TODO: Write your code here.
 
-    if (easy) {
+    if (difficulty === "easy") {
       return randomInteger(0, 1500);
     }
-  else if (normal) { 
+  else if (difficulty === "normal") { 
       return randomInteger(0, 1000);
     }
-  else if (hard) {
+  else if (difficulty === "hard") {
       return randomInteger(600, 1200);
     }
-    return difficulty;
 }
  
 
