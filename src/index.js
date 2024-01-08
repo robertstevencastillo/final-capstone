@@ -177,6 +177,7 @@ function updateScore() {
   // TODO: Write your code here
   points++;
   console.log(points);
+  score.textContent = points;
   return points;
 }
 
