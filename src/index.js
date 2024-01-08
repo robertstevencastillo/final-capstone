@@ -286,6 +286,7 @@ function gameStopped(){
 function startGame(){
   setDuration(10);
   showUp();
+  startTimer();
   setEventListeners();
   return "game started"; 
 }
