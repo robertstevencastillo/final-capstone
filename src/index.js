@@ -110,7 +110,7 @@ function gameOver() {
 
 function stopGame() {
   clearScore();
-  
+
 }
 
 /**
@@ -264,6 +264,8 @@ function setEventListeners(){
 */
 function setDuration(duration) {
   time = duration;
+
+  timerDisplay.textContent = duration;
   return time;
 }
 
