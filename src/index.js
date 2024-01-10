@@ -226,9 +226,9 @@ function startTimer() {
   
   const intervalID = setInterval(() => {
     updateTimer();
-    gameOver();
+    //gameOver();
   }, 1000)
-  //gameOver()
+  gameOver()
 }
 
 
