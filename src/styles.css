@@ -50,7 +50,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  cursor: url('./assets/mallet.png'), pointer;
+  cursor: url('https://hacksmith.store/cdn/shop/products/thor-mjolnir-hammer-full-metal-hammer.jpg?v=1689603531&width=1000'), pointer;
 }
 
 .hole {
@@ -86,7 +86,7 @@ h2 {
   pointer-events:auto;
 }
 
-.hole.show .mole {
+.hole .show .mole {
   top: 0;
   transform: scale(1.1);
 }
