@@ -25,7 +25,7 @@ h2 {
   -webkit-text-stroke: 1px black;
 }
 
-.start {
+#start {
     font-family:Georgia, 'Times New Roman', Times, serif, cursive;
     background-color:firebrick;
     font-size: 25px;
