@@ -71,7 +71,7 @@ function setDelay(difficulty) {
 function chooseHole(holes) {
     // TODO: Write your code here.
 
-    const choose = Math.floor(Math.random() * holes.length);
+    const choose = randomInteger(0, 8);
     const hole = holes[choose];
     if (hole.id === lastHole.id) {
         return chooseHole(holes);

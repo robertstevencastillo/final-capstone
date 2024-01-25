@@ -1,6 +1,6 @@
 html {
-  /*background: url('./assets/background.png') no-repeat center center fixed;*/
-  background: url('https://static.skillshare.com/uploads/project/220818/cover_1242_4a30db2afe84d5b231794612ccdd40ad.png') no-repeat center center fixed;
+  background: url('../assets/background.png') no-repeat center center fixed;
+  /* background: url('https://static.skillshare.com/uploads/project/220818/cover_1242_4a30db2afe84d5b231794612ccdd40ad.png') no-repeat center center fixed; */
   box-sizing: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -61,7 +61,7 @@ h2 {
 
 .hole:after {
   display: block;
-  /*background: url("./assets/hole.png") bottom center no-repeat;*/
+  /* background: url("../assets/hole.png") bottom center no-repeat; */
   background: url("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/hole.png?raw=true") bottom center no-repeat;
   background-size:contain;
   content:'';
@@ -74,7 +74,7 @@ h2 {
 }
 
 .mole {
-  /*background:url('./assets/mole.png') bottom center no-repeat;*/
+  /* background:url('../assets/mole.png') bottom center no-repeat; */
   background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;
   background-size: 40%;
   position: absolute;
@@ -86,7 +86,7 @@ h2 {
   pointer-events:auto;
 }
 
-.hole .show .mole {
+.hole.show .mole {
   top: 0;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
